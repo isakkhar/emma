@@ -1,0 +1,52 @@
+{% load static %}
+
+<header class="header sticky-bar bg-gray-900">
+    <div class="container">
+        <div class="main-header">
+            <div class="header-logo"><a class="d-flex" href="{% url 'home' %}"><img class="logo-night" alt="GenZ"
+                                                                                    src="{% static 'assets/imgs/template/logo.svg' %}"><img
+                    class="d-none logo-day" alt="GenZ" src="{% static 'assets/imgs/template/logo-day.svg' %}"></a></div>
+            <div class="header-nav">
+                <nav class="nav-main-menu d-none d-xl-block">
+                    <ul class="main-menu">
+                        <li class="has-item"><a class="color-gray-500" href="{% url 'home' %}">Home</a>
+                        </li>
+                        <li class="has-item"><a class="color-gray-500" href="{% url 'about' %}">About Me</a>
+                        </li>
+                        <li class="has-item"><a class="color-gray-500" href="{% url 'category' %}">Category</a>
+                        </li>
+                        <li class="has-item"><a class="color-gray-500" href="{% url 'portfolio' %}">Portfolio</a>
+                        </li>
+                        <li class="has-item"><a class="color-gray-500" href="{% url 'blog' %}">Blog</a>
+                        </li>
+                        <li><a class="color-gray-500" href="{% url 'contact' %}">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="burger-icon burger-icon-white"><span class="burger-icon-top"></span><span
+                        class="burger-icon-mid"></span><span class="burger-icon-bottom"></span></div>
+            </div>
+            <div class="header-right text-end"><a class="btn btn-search" href="#"></a>
+                <div class="form-search p-20">
+                    <form action="#">
+                        <input class="form-control" type="text" placeholder="Search">
+                        <input class="btn-search-2" type="submit" value="">
+                    </form>
+                    <div class="popular-keywords text-start mt-20">
+                        <p class="mb-10 color-white">Popular tags:</p><a class="color-gray-600 mr-10 font-xs" href="#">#
+                        Travel,</a><a class="color-gray-600 mr-10 font-xs" href="#"># Tech,</a><a
+                            class="color-gray-600 mr-10 font-xs" href="#"># Movie</a><a
+                            class="color-gray-600 mr-10 font-xs" href="#"># Lifestyle</a><a
+                            class="color-gray-600 mr-10 font-xs" href="#"># Sport</a>
+                    </div>
+                </div>
+                <div class="switch-button">
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" id="flexSwitchCheckChecked" type="checkbox" role="switch"
+                               checked="">
+                    </div>
+                </div>
+                <a class="btn btn-linear d-none d-sm-inline-block hover-up hover-shadow" href="{% url 'login' %}">Subscribe</a>
+            </div>
+        </div>
+    </div>
+</header>
